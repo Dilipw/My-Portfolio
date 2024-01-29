@@ -8,6 +8,7 @@
     <link href="My Portfolio\files\img\logo2.png" type="image/png" rel="icon">
     <link rel="stylesheet" href="My Portfolio/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 </head>
 <style>
@@ -21,8 +22,17 @@
 
     .navbar {
         display: flex;
-        width: 90%;
+        /* width: 90%; */
         margin: auto;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-link:hover {
+        color: rgb(44, 233, 15);
+        text-decoration: underline;
     }
 
     .btnProject {
@@ -145,16 +155,29 @@
     .Certifications {
         list-style-type: none;
     }
+
+    td img {
+        width: 100px;
+        filter: invert(100%);
+        background-color: transparent;
+    }
+
+    table td,
+    th {
+        color: white;
+    }
 </style>
 
 <body>
-
-    <div style="background-color: white;">
-        <nav class="navbar navbar-expand-lg">
-            <!-- <div class="container"> -->
-            <div class="nav-item1" style="color: black;font-weight: bold;">
+    <section
+        style="padding: 0px 10px; background-image: url('My Portfolio/files/img/back (2).jpg'); background-size: cover;color: white;">
+        <!-- <div class="blur-background"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: inherit; filter: blur(10px);">
+        </div> -->
+        <nav class="navbar navbar-expand-lg shadow">
+            <!-- <div class="nav-item1" style="color: black;font-weight: bold;">
                 <img src="My Portfolio/files/img/img.png" alt=""> DILIP WAGHMARE
-            </div>
+            </div> -->
             <!-- Add the toggler button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -180,28 +203,37 @@
                     </li>
                 </ul>
             </div>
-            <!-- </div> -->
         </nav>
-    </div>
 
-    <section style="padding: 0px 10px;">
-        <div class="about" style="padding-top:100px;padding-bottom: 125px;">
-            <div class="fs-1 text-center" style="font-weight: bolder;margin-top: 24px;">Hello, I'M DILIP WAGHMARE</div>
-            <br>
-            <p class="text-center fs-5">
-                As a Web Developer and Data Analyst i am passionate for Building Web-Application for users. <br> Using
-                Front-end and
-                Back-end Technologies of Web Development. <br> For Front-end HTML , CSS , JavaScript , AJAX JS ,
-                Bootstrap and For Back-end PHP with MySQL.
-            </p> <br>
-            <div class="text-center">
-                <a href="#project"><button class="btn btnProject">PROJECTS</button></a>
+
+
+        <div class="card col-md-7 m-auto   bg-transparent" style="border: none;">
+            <div class="about" style="padding-top:100px;padding-bottom: 125px;">
+                <div class="fs-1 text-center animate__animated animate__fadeIn"
+                    style="font-weight: bolder; margin-top: 24px;">
+                    Hello, I'M DILIP WAGHMARE
+                </div>
+                <br>
+                <p class="text-center fs-5">
+                    As an experienced Software Developer, my enthusiasm is centered around creating robust Web
+                    Applications
+                    that meet user requirements. Specializing in both Front-end and Back-end Technologies of Web
+                    Development, my skill set includes HTML, CSS, JavaScript, AJAX JS, Bootstrap for the Front-end, and
+                    PHP
+                    with MySQL for the Back-end. Currently, I am actively involved as a Laravel developer, and my
+                    proficiency extends to Django, HTML, CSS, JavaScript, jQuery, Bootstrap, and Python, reflecting a
+                    comprehensive and professional approach to my work.
+                </p> <br>
+                <div class="text-center">
+                    <a href="#project"><button class="btn btnProject">PROJECTS</button></a>
+                </div>
             </div>
         </div>
+
     </section>
 
-    <main style="background-color: rgb(248, 248, 249);">
-        <div style=" padding-top: 50px;">
+    <main style="background-color: rgb(43, 43, 44);">
+        <div style=" padding-top: 50px;color: white;">
 
             <h2 class="text-center" id="about" style="font-weight: bold;">ABOUT ME</h2>
             <li
@@ -280,7 +312,7 @@
                 </div>
             </div>
         </div>
-        <div class="container bg-white" style="border-radius: 5px;">
+        <div class="container shadow-lg" style="border-radius: 5px;background-color: black;color: white;">
             <h2 class="text-center" id="projects" style="font-weight: bold;">CERTIFICATIONS</h2>
             <li
                 style="width: 50px;background-color:rgb(84, 31, 209);list-style-type: none;color: blueviolet;height: 7px;border-radius: 10px;margin: auto;">
@@ -600,7 +632,7 @@
             </div>
 
         </div>
-        <div class="projects" style="background-color: white;margin-top: 20px;">
+        <div class="projects" style="background-color: rgb(43, 43, 44);margin-top: 20px;color: white;">
             <h2 class="text-center" id="project" style="font-weight: bold;">PROJECTS</h2>
             <li
                 style="width: 50px;background-color:rgb(84, 31, 209);list-style-type: none;color: blueviolet;height: 7px;border-radius: 10px;margin: auto;">
@@ -703,30 +735,31 @@
 
             </div>
         </div>
-    </main>
-    <footer class="container-xxl  bg-black text-white mt-5">
-        <!-- &copy;Copyrights are Reserved by Dilip -->
-        <div style="padding:50px 0px;">
-            <div>
-                <h5>DILIP WAGHMARE</h5>
-                <p>
-                    Professional Web Developer as develop and provide the better product for clients as user .
-                </p>
+        <footer class="container-xxl  bg-black text-white mt-5">
+            <!-- &copy;Copyrights are Reserved by Dilip -->
+            <div style="padding:50px 0px;">
+                <div>
+                    <h5>DILIP WAGHMARE</h5>
+                    <p>
+                        Professional Web Developer as develop and provide the better product for clients as user .
+                    </p>
+                </div>
             </div>
-        </div>
-        <div>
-            <ul class="socials" id="contact">
-                <li><a href="https://www.linkedin.com/in/dilip-waghmare-88b47423b/"><img style="height: 30px;"
-                            src="My Portfolio/files/img/In1.png" alt=""></a></li>
-                <li><a href="https://wa.me/qr/YGMUAC56KPNKL1"><img style="height: 30px;"
-                            src="My Portfolio/files/img/whatsapp.png" alt=""></a></li>
-                <li><a href="https://instagram.com/dilipw15?igshid=OGQ5ZDc2ODk2ZA=="><img style="height: 30px;"
-                            src="My Portfolio/files/img/insta.png" alt=""></a></li>
-                <li><a href="https://github.com/Dilipw"><img style="height: 30px;"
-                            src="My Portfolio/files/img/github.png" alt=""></a></li>
-            </ul>
-        </div>
-    </footer>
+            <div>
+                <ul class="socials" id="contact">
+                    <li><a href="https://www.linkedin.com/in/dilip-waghmare-88b47423b/"><img style="height: 30px;"
+                                src="My Portfolio/files/img/In1.png" alt=""></a></li>
+                    <li><a href="https://wa.me/qr/YGMUAC56KPNKL1"><img style="height: 30px;"
+                                src="My Portfolio/files/img/whatsapp.png" alt=""></a></li>
+                    <li><a href="https://instagram.com/dilipw15?igshid=OGQ5ZDc2ODk2ZA=="><img style="height: 30px;"
+                                src="My Portfolio/files/img/insta.png" alt=""></a></li>
+                    <li><a href="https://github.com/Dilipw"><img style="height: 30px;"
+                                src="My Portfolio/files/img/github.png" alt=""></a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
